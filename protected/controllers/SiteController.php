@@ -119,7 +119,7 @@ class SiteController extends Controller
         public function sendMail(){
             Yii::import('application.extensions.phpmailer.JPhpMailer');
             $mail = new JPhpMailer;
-
+            
             $mail->SMTPSecure = "ssl";  
             $mail->Host='smtp.gmail.com';  
             $mail->Port='465';  
